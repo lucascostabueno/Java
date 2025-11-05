@@ -1,0 +1,138 @@
+##############################
+# IntelliJ IDEA (Community)
+##############################
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Plugins do IntelliJ
+.idea_modules/
+.idea/libraries/
+.idea/shelf/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries/
+.idea/httpRequests/
+.idea/jsLibraryMappings.xml
+
+##############################
+# Compilação Java
+##############################
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+*.log
+
+##############################
+# Maven
+##############################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+##############################
+# Gradle
+##############################
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+##############################
+# Eclipse (caso importe projeto)
+##############################
+.classpath
+.project
+.settings/
+
+##############################
+# NetBeans (caso importe projeto)
+##############################
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+##############################
+# VS Code (caso use também)
+##############################
+.vscode/
+
+##############################
+# Arquivos de sistema
+##############################
+.DS_Store
+Thumbs.db
+desktop.ini
+
+##############################
+# Arquivos temporários e backups
+##############################
+*.tmp
+*.temp
+*.swp
+*.bak
+*.backup
+*.orig
+*.old
+*.rej
+*.swo
+
+##############################
+# Logs e relatórios
+##############################
+*.log
+*.trace
+*.out
+*.err
+
+##############################
+# Ambientes virtuais / scripts
+##############################
+env/
+venv/
+ENV/
+__pycache__/
+*.pyc
+
+##############################
+# Arquivos ocultos do macOS e Linux
+##############################
+.svn/
+.gitignore~
+*~
+.cache/
+.trash/
+lost+found/
+
+##############################
+# Arquivos de distribuição
+##############################
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+*.obj
+*.o
+*.a
+*.lib
