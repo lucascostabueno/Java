@@ -1,25 +1,43 @@
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
     static void main(String[] args) {
-        int y = 45;
-        System.out.print(y);
-        System.out.println("Bom dia!");
-
-        double x = 10.32344;
-        System.out.println(x);
-        System.out.printf("%.2f", x);
-        System.out.printf("%.2f\n", x);
-        System.out.printf("%.4f\n", x);
         Locale.setDefault(Locale.US);
-        System.out.printf("%.4f\n", x);
+        Scanner sc = new Scanner(System.in);
 
-        System.out.println("RESULTADO = " + x + " METROS");
-        System.out.printf("RESULTADO = %.2f metros%n", x);
+        // Para ler uma palavra (texto sem espaços)
+        String a;
+        a = sc.next();
+        System.out.println("Voce digitou " + a);
 
-        String nome = "Maria";
-        int idade = 31;
-        double renda = 4000.0;
-        System.out.printf("%s tem %d anos e ganha R$ %.2f reais%n", nome, idade, renda);
+        // Para ler um número inteiro
+        int b;
+        b = sc.nextInt();
+        System.out.println("Voce digitou " + b);
+
+        // Para ler um número com ponto flutuante
+        double c;
+        c = sc.nextDouble();
+        System.out.println("Voce digitou " + c);
+
+        // Para ler um caractere
+        char d;
+        d = sc.next().charAt(0);
+        System.out.println("Voce digitou " + d);
+
+        // Para ler vários dados na mesma linha
+        String e;
+        int f;
+        double g;
+        e = sc.next();
+        f = sc.nextInt();
+        g = sc.nextDouble();
+        System.out.println("Dados digitados: ");
+        System.out.println(e);
+        System.out.println(f);
+        System.out.println(g);
+
+        sc.close();
     }
 }
