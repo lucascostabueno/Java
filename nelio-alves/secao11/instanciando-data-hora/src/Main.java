@@ -17,7 +17,7 @@ public class Main {
         Instant d07 = Instant.parse("2022-07-20T01:30:26-03:00");
 
         LocalDate d08 = LocalDate.parse("20/07/2022", fmt1);
-        LocalDate d09 = LocalDate.parse("20/07/2022 01:30", fmt2);
+        LocalDateTime d09 = LocalDateTime.parse("20/07/2022 01:30", fmt2);
 
         LocalDate d10 = LocalDate.of(2022, 7, 20);
         LocalDateTime d11 = LocalDateTime.of(2022, 7, 20, 1, 30);
