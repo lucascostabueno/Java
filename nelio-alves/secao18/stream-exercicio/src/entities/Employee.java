@@ -1,22 +1,15 @@
 package entities;
 
-import java.util.Objects;
+public class Employee {
 
-public class Product {
     private String name;
-    private Double price;
+    private String email;
+    private Double salary;
 
-    public Product(String name, Double price) {
+    public Employee(String name, String email, Double salary) {
         this.name = name;
-        this.price = price;
-    }
-
-    public Double getPrice() {
-        return price;
-    }
-
-    public void setPrice(Double price) {
-        this.price = price;
+        this.email = email;
+        this.salary = salary;
     }
 
     public String getName() {
@@ -27,23 +20,19 @@ public class Product {
         this.name = name;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        Product product = (Product) o;
-        return Objects.equals(name, product.name) && Objects.equals(price, product.price);
+    public String getEmail() {
+        return email;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, price);
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    @Override
-    public String toString() {
-        return "Product{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                '}';
+    public Double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(Double salary) {
+        this.salary = salary;
     }
 }
